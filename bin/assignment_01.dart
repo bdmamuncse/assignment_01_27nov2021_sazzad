@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main() {
 //assignment_1_question_1_printing_names
 print('###########question1############');
@@ -12,9 +14,20 @@ displayMyName('Hello', 'Sazzad Hossain');
  print('###########question3############');
  myVariableMethods();
 
+ //assignment_1_question_4_User_imput_sum
+ print('###########question4############');
+ myAddInputMethod();
+
  }
 
-
+void myAddInputMethod(){
+ print("Enter first number:");
+ int? num1 = int.parse(stdin.readLineSync()!);
+ print("Enter second number:");
+ int? num2 = int.parse(stdin.readLineSync()!);
+ int sum = num1 + num2;
+ print("result addition: $sum");
+}
 
  void myVariableMethods(){
  int numVar=12;
