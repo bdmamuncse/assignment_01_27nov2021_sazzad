@@ -1,6 +1,41 @@
 void main() {
-// print('this is test');
+//assignment_1_question_1_printing_names
+print('###########question1############');
 displayMyName('Hello', 'Sazzad Hossain');
+
+//assignment_1_question_2_Summation_of_two numbe
+ print('###########question2############');
+ var resultAdd=additionMethod(20,50);
+ print('$resultAdd');
+
+ //assignment_1_question_3_types of variables
+ print('###########question3############');
+ myVariableMethods();
+
+ }
+
+
+
+ void myVariableMethods(){
+ int numVar=12;
+ print('$numVar');
+ String string1='12';
+ print('$string1');
+ String string2='Md. Sazzad Hossain';
+ print('$string2');
+ double numDouble=23.4;
+ print('$numDouble');
+ List<String> myList(){ return ['My Name','Father Name', 'Sister Name']; }
+ print(myList());
+ List<int> myListNumber(){ return [1,2,3,4,5,6]; }
+ print(myListNumber());
+ Map<String,String> myMapMethod(){return {'id':'110', 'name':'sazzad' };}
+ print(myMapMethod());
+ }
+
+int additionMethod( int arg1, int arg2){
+ var addition=arg1 + arg2;
+ return addition;
 }
 
 void displayMyName(String msg, String msg1){
