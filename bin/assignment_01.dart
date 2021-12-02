@@ -15,32 +15,35 @@ displayMyName('Hello', 'Sazzad Hossain');
  myVariableMethods();
 
  //assignment_1_question_4_User_imput_sum
- print('###########question4############');
- myAddInputMethod();
+ // print('###########question4############');
+ // myAddInputMethod();
 
  //assignment_1_question_5_
  print('###########question5############');
  myAddSumMulDivRemMethod();
- }
 
- //###########main_method_ends_Here###################
+ } //###########main_method_ends_Here###################
 
 myAddSumMulDivRemMethod(){
- print("Enter first number:");
+ print('Enter first number:');
  int? num1 = int.parse(stdin.readLineSync()!);
- print("Enter second number:");
+ print('Enter second number:');
  int? num2 = int.parse(stdin.readLineSync()!);
  int sum = num1 + num2;
  int sub = num1 - num2;
  int mul = num1 * num2;
  double div = num1 / num2;
- double rem = num1 % num2;
- print("result addition: $sum");
+ var rem = num1 % num2;
+ print("result summation: $sum");
+ print("result subtraction: $sub");
+ print("result multiplication: $mul");
+ print("result division: $div");
+ print("result remainder: $rem");
 }
 
 void myAddInputMethod(){
  print("Enter first number:");
- int? num1 = int.parse(stdin.readLineSync()!);
+ int? num1 = int.parse(stdin.readLineSync()!); //get it from google search
  print("Enter second number:");
  int? num2 = int.parse(stdin.readLineSync()!);
  int sum = num1 * num2;
