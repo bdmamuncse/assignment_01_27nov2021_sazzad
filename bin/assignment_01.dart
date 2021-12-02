@@ -19,16 +19,37 @@ displayMyName('Hello', 'Sazzad Hossain');
  // myAddInputMethod();
 
  //assignment_1_question_5_
- print('###########question5############');
- myAddSumMulDivRemMethod();
+ // print('###########question5############');
+ // var val1=43; var val2=22;
+ // myAddSumMulDivRemMethod(val1,val2);
+
+ // assignment_1_question_6
+ // print('###########question6############');
+ // var radius=9;
+ // valueOfPieMethod(radius);
+
+ // assignment_1_question_7
+ print('###########question7############');
+ var val1=23; var val2=11;
+ double newVar=reUsableMethod(val1, val2);
+ print('$newVar');
 
  } //###########main_method_ends_Here###################
 
-myAddSumMulDivRemMethod(){
- print('Enter first number:');
- int? num1 = int.parse(stdin.readLineSync()!);
- print('Enter second number:');
- int? num2 = int.parse(stdin.readLineSync()!);
+double reUsableMethod(var val1, var val2){
+ var result =  val1/val2;
+  return result;
+ // print('$result');
+}
+ void valueOfPieMethod(var radius){
+ const p=3.1416;
+ var A=p*(radius*radius);
+ var C=2*p*radius;
+ print('Area of the circle: $A');
+ print('Perimeter of the circle: $C');
+ }
+
+void myAddSumMulDivRemMethod(var num1, var num2){
  int sum = num1 + num2;
  int sub = num1 - num2;
  int mul = num1 * num2;
