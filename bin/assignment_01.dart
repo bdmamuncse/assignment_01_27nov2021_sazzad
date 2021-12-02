@@ -15,27 +15,67 @@ displayMyName('Hello', 'Sazzad Hossain');
  myVariableMethods();
 
  //assignment_1_question_4_User_imput_sum
- // print('###########question4############');
- // myAddInputMethod();
+ print('###########question4############');
+ myAddInputMethod();
 
  //assignment_1_question_5_
- // print('###########question5############');
- // var val1=43; var val2=22;
- // myAddSumMulDivRemMethod(val1,val2);
+ print('###########question5############');
+ var val1=43; var val2=22;
+ myAddSumMulDivRemMethod(val1,val2);
 
  // assignment_1_question_6
- // print('###########question6############');
- // var radius=9;
- // valueOfPieMethod(radius);
+ print('###########question6############');
+ var radius=9;
+ valueOfPieMethod(radius);
 
  // assignment_1_question_7
  print('###########question7############');
- var val1=23; var val2=11;
- double newVar=reUsableMethod(val1, val2);
+ var val11=23; var val22=11;
+ double newVar=reUsableMethod(val11, val22);
  print('$newVar');
+
+ // assignment_1_question_8
+ print('###########question8############');
+ print(myMapMethod());
+
+ // assignment_1_question_9
+ // print('###########question9############');
+ // const newVal1=83;
+ // const newVal2=11;
+ // myNewMethod2();
+
+ // assignment_1_question_10
+ print('###########question10############');
+ printVariousValuesMethod();
 
  } //###########main_method_ends_Here###################
 
+void printVariousValuesMethod(){
+ var p1=-5 + 8 * 6;
+ print('$p1');
+
+ var p2=(55+9) % 9;
+ print('$p2');
+
+ var p3=20 + -3*5 / 8;
+ print('$p3');
+
+ var p4=5 + 15 / 3 * 2 - 8 % 3;
+ print('$p4');
+}
+// void myNewMethod2(){
+//   var passMultiResult=myNewMethod();
+//   print('$passMultiResult');
+// }
+//
+// int myNewMethod(){
+//  int newMul=newVal1*newVal2;
+//  return newMul;
+// }
+
+Map<String,String> myMapMethod(){
+ return {'ID':'110', 'Name':'Sazzad', 'email':'bdmamuncse@gmail.com', 'Phone':'015195'};
+}
 double reUsableMethod(var val1, var val2){
  var result =  val1/val2;
   return result;
