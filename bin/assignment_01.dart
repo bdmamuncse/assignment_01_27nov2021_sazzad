@@ -18,14 +18,32 @@ displayMyName('Hello', 'Sazzad Hossain');
  print('###########question4############');
  myAddInputMethod();
 
+ //assignment_1_question_5_
+ print('###########question5############');
+ myAddSumMulDivRemMethod();
  }
+
+ //###########main_method_ends_Here###################
+
+myAddSumMulDivRemMethod(){
+ print("Enter first number:");
+ int? num1 = int.parse(stdin.readLineSync()!);
+ print("Enter second number:");
+ int? num2 = int.parse(stdin.readLineSync()!);
+ int sum = num1 + num2;
+ int sub = num1 - num2;
+ int mul = num1 * num2;
+ double div = num1 / num2;
+ double rem = num1 % num2;
+ print("result addition: $sum");
+}
 
 void myAddInputMethod(){
  print("Enter first number:");
  int? num1 = int.parse(stdin.readLineSync()!);
  print("Enter second number:");
  int? num2 = int.parse(stdin.readLineSync()!);
- int sum = num1 + num2;
+ int sum = num1 * num2;
  print("result addition: $sum");
 }
 
